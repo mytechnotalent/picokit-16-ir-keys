@@ -1,0 +1,68 @@
+{
+  "repo": "picokit-16-ir-keys",
+  "eyebrow": "PICOKIT // LESSON 16",
+  "title": "PICOKIT // IR KEYS",
+  "subtitle": "REMOTE KEY ACTIONS + AUTHENTICATED HEARTBEAT",
+  "accent": "#ECFF24",
+  "dim": "#929E16",
+  "white": "#F1F6E0",
+  "cyan": "#7FD8E0",
+  "bg": "#101102",
+  "bg_edge": "#040500",
+  "icon": "remote",
+  "panel_status": "KEY 0x45  ·  ACTION UP  ·  AEAD :ON",
+  "chips": [
+    {
+      "label": "INPUT",
+      "value": "GP5"
+    },
+    {
+      "label": "KEY",
+      "value": "0x45"
+    },
+    {
+      "label": "ACTION",
+      "value": "up"
+    },
+    {
+      "label": "RADIO",
+      "value": "-39 dBm"
+    }
+  ],
+  "terminal": [
+    "$ gateway listen /dev/cu.usbserial-A50285BI",
+    "[*] node 00016  seq 18  HEARTBEAT  AEAD ok",
+    "[*] anti-replay window ok  counter 18",
+    "[+] remote key 0x45 up  LED red  onboard blink",
+    "[+] ack sent  rssi -39  snr 8.7"
+  ],
+  "categories": [
+    "KEYS",
+    "ACTIONS",
+    "SECURE",
+    "LINK"
+  ],
+  "cards": [
+    {
+      "tag": "KEY-01",
+      "label": "up",
+      "value": "0x45"
+    },
+    {
+      "tag": "KEY-02",
+      "label": "down",
+      "value": "0x46"
+    },
+    {
+      "tag": "KEY-03",
+      "label": "ok",
+      "value": "0x47"
+    }
+  ],
+  "footer": [
+    "1 NODE  ·  1 GATEWAY  ·  2 WAY LORA  ·  NO PLAINTEXT",
+    "PICOKIT SERIES  ·  OUTPUT  ·  INPUT  ·  RADIO  ==[ KEYS ]=="
+  ],
+  "layout": "panel",
+  "stat": "GP5"
+}
